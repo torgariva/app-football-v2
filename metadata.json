@@ -1,0 +1,6 @@
+{
+  "name": "Football Stats & Probabilities",
+  "description": "Football calendar, standings, and statistical prediction model (Poisson) for Top 5 European Leagues.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
