@@ -4,6 +4,9 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+# Ensure data directory exists
+RUN mkdir -p /app/data
+
 # Install dependencies first for layer caching
 COPY package*.json ./
 RUN npm install
