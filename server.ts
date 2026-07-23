@@ -204,7 +204,7 @@ app.get('/api/matches/:matchId', (req: Request, res: Response) => {
  * Manually triggers sync or dynamic simulation of football-data.org.
  */
 app.post('/api/sync', async (req: Request, res: Response) => {
-  const apiKey = req.body.apiKey || process.env.FOOTBALL_DATA_API_KEY;
+  const apiKey = req.body.apiKey;
   try {
     const result = await runSync(apiKey);
     res.json(result);
